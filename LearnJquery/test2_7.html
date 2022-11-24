@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-2.0.0.js"></script>
+        <style>
+            *{
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <input type="text" value="Text"/> <br/>
+            <input type="file" value="file"/> <br/>
+            <input type="password" value="Pasword"/> <br/>
+            <select>
+                <option>Select</option>
+                <option selected="">Selected</option>
+            </select> <br/>
+            <input type="submit" value="Submit"/>
+            <input type="button" value="button"/>
+        </div>
+        <script>
+            $(':text').css('border', 'solid 2px red');
+            $(':password').css('border', 'solid 2px blue');
+            $(':file').css('border', 'solid 2px pink');
+            $(':selected').parent().css('border', 'solid 2px green');
+            $(':submit').css('border', 'solid 2px black');
+            $(':button').css('border', 'solid 2px yellow');
+        </script>
+
+    </body>
+</html>

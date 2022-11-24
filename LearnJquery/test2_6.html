@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>first-child demo</title>
+        <style>
+            .selected{
+                color: #006600;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-2.0.0.js"></script>
+    </head>
+    <body>
+        <div>
+            <span>Nguyễn Văn Cường</span>
+            <span>Thái Hoàng Chương</span>
+            <span>Dương Triệu vũ</span>
+        </div>
+        <div>
+            <span>Nguyễn Văn Cường</span>
+            <span>Thái Hoàng Chương</span>
+            <span>Dương Triệu vũ</span>
+        </div>
+        <script>
+            $("div span:first-child")
+                    .hover(function () {
+                        $(this).addClass("selected");
+                    }, function () {
+                        $(this).removeClass("selected");
+                    });
+        </script>
+    </body>
+</html>
